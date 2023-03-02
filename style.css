@@ -134,6 +134,8 @@ h1 {
     width: 100%;
     position: relative;
     z-index: 1;
+    background: linear-gradient(rgba(247,247,247,1) 80%, rgba(68,106,85,1) 100%);
+    background-color: rgba(68,106,85,1);
 }
 
 .thirdPages img{
@@ -171,5 +173,24 @@ h1 {
     padding-top: 15px;
     line-height: 0.9em;
     color: var(--premiere-color);
+}
+
+
+
+.fourthPages{
+    min-height: 10%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: rgba(68,106,85,1);
+}
+
+.transitionFifthPages {
+    min-height: 60%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background: rgb(247,247,247);
+    background: linear-gradient(180deg, rgba(68,106,85,1) 10%, rgba(247,247,247,1) 100%);
 }
 
