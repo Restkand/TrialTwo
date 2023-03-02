@@ -112,10 +112,11 @@ h1 {
     position: absolute;
     height: 80%;
     width: auto;
-    top: 10%;
-    right: 10%;
+    padding-top: 40px;
+    margin-left: 50px;
     opacity: 0.9;
     z-index: 1;
+    border-radius: 10%;
 }
 
 #slideshow img {
@@ -126,3 +127,49 @@ h1 {
 #slideshow img:first-child {
     opacity: 1;
 }
+
+.thirdPages{
+    background-color: var(--base-color);
+    min-height: 90%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.thirdPages img{
+    position: absolute;
+    height: 60%;
+    width: auto;
+    opacity: 0.9;
+    z-index: 1;
+    border-radius: 10%;
+    left: 21.5%;
+}
+
+#slideshowCoffee img {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#slideshowCoffee img:first-child {
+    opacity: 1;
+}
+
+/* .thirdPages h2 {
+    position: absolute;
+    z-index: 2;
+    left: 24%;
+    bottom: 31.5%;
+    font-family: var(--header-font);
+    font-size: 50px;
+    color: var(--premiere-color);
+} */
+
+.thirdPages h1{
+    position: relative;
+    font-size: 54px;
+    padding-top: 15px;
+    line-height: 0.9em;
+    color: var(--premiere-color);
+}
+
