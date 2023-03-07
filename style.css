@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Montserrat&family=Playfair+Display&family=Suez+One&display=swap');
 :root {
     --premiere-color: #446A55;
     --second-color:#063427;
@@ -8,6 +8,8 @@
     --font-color: #000000;
 
     --header-font:'Fraunces', serif;
+    --optionHeader-font:'Playfair Display', serif;
+    --subHeader-font:'Suez One', serif;
     --text-font: 'Cormorant', serif;
     --option-font:'Montserrat', sans-serif;
 
@@ -130,17 +132,15 @@ h1 {
 
 .thirdPages{
     background-color: var(--base-color);
-    min-height: 90%;
+    min-height: 75%;
     width: 100%;
     position: relative;
     z-index: 1;
-    background: linear-gradient(rgba(247,247,247,1) 80%, rgba(68,106,85,1) 100%);
-    background-color: rgba(68,106,85,1);
 }
 
 .thirdPages img{
     position: absolute;
-    height: 60%;
+    height: 70%;
     width: auto;
     opacity: 0.9;
     z-index: 1;
@@ -178,19 +178,117 @@ h1 {
 
 
 .fourthPages{
-    min-height: 10%;
+    min-height: 60%;
     width: 100%;
     position: relative;
     z-index: 1;
     background-color: rgba(68,106,85,1);
 }
 
-.transitionFifthPages {
-    min-height: 60%;
+.fourthPages .card {
+    margin-top: 22.5%;
+    padding: 50px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.fourthPages .card h2{
+    font-family: var(--optionHeader-font);
+    color: var(--premiere-color);
+    font-size: 72px;   
+}
+
+.fourthPages .card .btn {
+    font-family: var(--text-font);
+    margin-top: 18px;
+    font-size: 22px;
+    background-color: var(--premiere-color);
+    border-color: var(--premiere-color);
+}
+
+.fourthPages .card .btn:active, .btn:focus{
+    background-color: var(--second-color);
+}
+
+.fourthPages .card .btn:hover {
+    background-color: var(--second-color);
+}
+
+
+
+/* .midleBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.whiteBox{
+    background-color: white;
+    padding: 245px 195px;
+    border-radius: 10px;
+}
+
+.whiteBox h2 {
+    font-size: 84px;
+    font-family: var(--text-font);
+} */
+
+.fifthPages{
+    min-height: 75%;
     width: 100%;
     position: relative;
     z-index: 1;
-    background: rgb(247,247,247);
-    background: linear-gradient(180deg, rgba(68,106,85,1) 10%, rgba(247,247,247,1) 100%);
+    background-color: var(--base-color);
 }
 
+.fifthPages iframe {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-top: 7.5%;
+}
+
+.fifthPages .hatemonday h1 {
+    margin-top: 5%;
+    font-size: 45px;
+    color: var(--premiere-color);
+}
+
+.fifthPages .visitus h1 {
+    margin-top: 9.5%;
+    font-size: 32px;
+    color: var(--premiere-color);
+}
+
+.fifthPages .visitus p {
+    font-family: var(--option-font);
+}
+
+.fifthPages .visitus a {
+    font-family: var(--text-font);
+}
+
+.fifthPages a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.sixthPages{
+    min-height: 4%;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: var(--second-color);
+}
+
+.sixthPages .credit {
+    padding-top: 1%;
+}
+
+.sixthPages p {
+    font-family: var(--text-font);
+    color: white;
+}
+
+.sixthPages a {
+    font-family: var(--text-font);
+    color: white;
+}
